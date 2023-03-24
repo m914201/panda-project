@@ -14,5 +14,8 @@ module.exports = {
         Common: path.join(__dirname, 'src/components/common'),
       },
     },
+    devServer: {
+      historyApiFallback: true,
+    },
   },
 }
