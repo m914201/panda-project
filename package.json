@@ -7,11 +7,13 @@
     "build": "vue-cli-service build",
     "build:development": "vue-cli-service build --mode development",
     "build:production": "vue-cli-service build --mode production",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "firebase:deploy": "vue-cli-service build && firebase deploy"
   },
   "dependencies": {
     "axios": "^0.27.2",
     "core-js": "^3.8.3",
+    "firebase": "^9.18.0",
     "lodash": "^4.17.21",
     "moment": "^2.29.4",
     "swiper": "^4.4.1",

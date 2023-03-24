@@ -19,6 +19,12 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ '../views/AboutView.vue'),
   },
+  {
+    path: '/DataBase',
+    name: 'DataBase',
+    component: () => import('Components/DataBase.vue'),
+    // meta: { requiresAuth: true },
+  },
 ]
 
 const router = new VueRouter({
