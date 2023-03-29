@@ -1,36 +1,44 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: HomeView,
-  },
-  {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ '../views/AboutView.vue'),
-  },
-  {
-    path: '/DataBase',
-    name: 'DataBase',
-    component: () => import('Components/DataBase.vue'),
-    // meta: { requiresAuth: true },
+    component: Home,
+    children: [
+      //메인 페이지
+      {
+        path: '/',
+        name: 'main',
+        component: () => import('Views/Main'),
+      },
+      {
+        path: '/DataBase',
+        name: 'dataBase',
+        component: () => import('Components/DataBase.vue'),
+      },
+    ],
   },
 ]
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: 'hash',
   base: process.env.BASE_URL,
   routes,
+  scrollBehavior() {
+    return { x: 0, y: 0 }
+  },
 })
+
+//라우터 중복 오류 대응 위한 코드
+const originalPush = VueRouter.prototype.push
+VueRouter.prototype.push = function push(location) {
+  return originalPush.call(this, location).catch(err => {
+    if (err.name !== 'NavigationDuplicated') throw err
+  })
+}
 
 export default router
