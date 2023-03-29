@@ -27,6 +27,7 @@
     "vue-server-renderer": "^2.6.14",
     "vue-template-compiler": "^2.6.14",
     "vue-toasted": "^1.1.28",
+    "vue-typer": "^1.2.0",
     "vue-use": "^0.2.0"
   },
   "devDependencies": {
@@ -58,8 +59,7 @@
     "parserOptions": {
       "parser": "@babel/eslint-parser"
     },
-    "rules": {
-    }
+    "rules": {}
   },
   "browserslist": [
     "> 1%",
