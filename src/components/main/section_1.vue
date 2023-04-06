@@ -5,9 +5,10 @@
         <vue-typer
           class="typing-display"
           :text="[
-            '안되면 될 때까지,',
-            '누구보다 많이 뛰어서,',
-            '한번 시작하면 끝을 보자',
+            '조금 느리지만 멈추지 않고,',
+            '멈추지 않고 꾸준히,',
+            '항상 앞을 보며 성실히 걷고 있습니다.',
+            '같이 걸으실래요?',
           ]"
           :repeat="0"
           :shuffle="false"
@@ -21,26 +22,31 @@
           caret-animation="blink"
         ></vue-typer>
       </div>
-      <div class="stars">
-        <div class="star" v-for="(star, idx) in 50" :key="`star_${idx}`"></div>
+      <div class="background-wrap">
+        <div class="background-cont"></div>
+      </div>
+      <div id="section_animation">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div id="Walking"></div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import Vue from 'vue'
+import VueTyperPlugin from 'vue-typer'
+Vue.use(VueTyperPlugin)
 export default {
   data() {
     return {}
   },
-  components: {
-    // popup,
-  },
   computed: {},
   methods: {},
-  async created() {},
-  updated() {},
+  created() {},
 }
 </script>
 
-<style></style>
+<style scoped></style>

@@ -1,0 +1,59 @@
+header {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  z-index: 9999;
+}
+
+header .rela {
+  max-width: 1500px;
+  height: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .rela .gnb-item-wrap ul {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .rela .gnb-item-wrap ul li {
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+header .rela .gnb-item-wrap ul li.on {
+  height: 40px;
+  background-color: #fff;
+  border-radius: 20px;
+  -webkit-box-shadow: 2px 20px 30px -10px #8fadbf;
+          box-shadow: 2px 20px 30px -10px #8fadbf;
+}
+
+header .rela .gnb-item-wrap ul li.on a {
+  color: #8fadbf;
+}
+
+header .rela .gnb-item-wrap ul li a {
+  margin: auto;
+  color: #fff;
+  font-size: 1.275rem;
+  font-family: 'SeoulHangangM';
+}
+/*# sourceMappingURL=layout.css.map */
