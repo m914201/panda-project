@@ -7,7 +7,7 @@
       @click="scrollInto(list.title)"
       @mouseover="NavEvent('Over', list)"
       @mouseleave="NavEvent('Leave', list)"
-      :class="{ on: list.on || list.title == navState }"
+      :class="[{ on: list.on || list.title == navState }, { active: isActive }]"
     >
       <a href="javascript:void(0);">{{ list.title }}</a>
     </li>
@@ -15,11 +15,11 @@
 </template>
 
 <script>
-import { GNB_LIST } from 'Mixins/layout.js'
+import { GNB_LIST } from 'Configs/layout.js'
 export default {
   data() {
     return {
-      NavToggle: false,
+      isActive: false,
       gnbList: JSON.parse(JSON.stringify(GNB_LIST)),
     }
   },
@@ -28,7 +28,12 @@ export default {
       type: String,
     },
   },
-  watch: {},
+  watch: {
+    navState() {
+      if (this.navState == 'Home') this.isActive = false
+      else this.isActive = true
+    },
+  },
   methods: {
     NavEvent(gubun, list) {
       if (gubun == 'Over') list.on = true
@@ -36,6 +41,7 @@ export default {
     },
     scrollInto(title) {
       this.$emit('scrollInto', title)
+      console.log(title)
     },
   },
 }
