@@ -50,6 +50,18 @@ header .rela .gnb-item-wrap ul li.on a {
   color: #8fadbf;
 }
 
+header .rela .gnb-item-wrap ul li.on.active {
+  background-color: #8fadbf;
+}
+
+header .rela .gnb-item-wrap ul li.on.active a {
+  color: #fff;
+}
+
+header .rela .gnb-item-wrap ul li.active a {
+  color: #000;
+}
+
 header .rela .gnb-item-wrap ul li a {
   margin: auto;
   color: #fff;

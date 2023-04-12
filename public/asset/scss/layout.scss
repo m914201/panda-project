@@ -31,6 +31,17 @@ header {
             a {
               color: $main-color;
             }
+            &.active {
+              background-color: $main-color;
+              a {
+                color: #fff;
+              }
+            }
+          }
+          &.active {
+            a {
+              color: #000;
+            }
           }
           a {
             margin: auto;
