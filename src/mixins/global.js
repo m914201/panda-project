@@ -15,8 +15,9 @@ export default {
         let CONTOFFSET = this.contOffset
         if (Y >= OFFSET[0] && Y < OFFSET[1]) this.navState = 'Home'
         if (Y >= OFFSET[1] && Y < OFFSET[2]) this.navState = 'Skill'
-        if (Y >= OFFSET[2]) this.navState = 'TimeLine'
-        // if (Y >= OFFSET[3]) this.navState = 'Project'
+        if (Y >= OFFSET[2] && Y < OFFSET[3]) this.navState = 'TimeLine'
+        if (Y >= OFFSET[3]) this.navState = 'Project'
+
         if (Y + OFFSET[1] >= CONTOFFSET[0] + OFFSET[1]) this.invasion = 'Skill'
       },
     },
