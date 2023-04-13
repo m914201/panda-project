@@ -16,6 +16,10 @@ export const MAIN_TITLE = {
     title: 'timeline',
     titleTxt: 'TIME LINE',
   },
+  PROJECT: {
+    title: 'project',
+    titleTxt: 'PROJECT',
+  },
 }
 
 export const SKILLS = [
@@ -42,5 +46,43 @@ export const SKILLS = [
   {
     title: 'DB',
     content: [{ name: 'MariaDB', icon: 'mariaDb', level: '80' }],
+  },
+]
+
+export const TIMELINE = [
+  {
+    date: '2020. 10 ~ 2021. 04',
+    cont: '그린컴퓨터아카데미 웹디자이너 과정 수료',
+    lang: 'HTML5, jQuery, CSS',
+  },
+  {
+    date: '2021. 04. 30',
+    cont: '웹디자인기능사 자격증 취득',
+    lang: 'HTML5, jQuery, CSS',
+  },
+  {
+    date: '2021. 05 ~ 2021. 12',
+    cont: '(주)유스코어',
+    lang: 'PHP, JavaScript, jQuery, CSS',
+  },
+  {
+    date: '2021. 05 ~ 2021. 12',
+    cont: '(주)골프유닷넷 웹사이트 유지보수',
+    lang: 'PHP, JavaScript, jQuery, CSS',
+  },
+  {
+    date: '2022. 01 ~',
+    cont: '(주)HOGOO153',
+    lang: 'VUE, JavaScript, jQuery, SCSS',
+  },
+  {
+    date: '2022. 10 ~',
+    cont: '(주)탑코리아서비스 홈페이지 제작',
+    lang: 'VUE, JavaScript, jQuery, SCSS',
+  },
+  {
+    date: '2022. 12 ~',
+    cont: '(주)마키노차야 웹사이트 유지보수',
+    lang: 'PHP, JavaScript, jQuery, CSS',
   },
 ]
