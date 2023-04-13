@@ -8,10 +8,15 @@
       :invasion="invasion"
     ></section_2>
     <section_3
-      class="section section_2 fullpage"
+      class="section section_3 fullpage"
       ref="TimeLine"
       :invasion="invasion"
     ></section_3>
+    <section_4
+      class="section section_4 fullpage"
+      ref="Project"
+      :invasion="invasion"
+    ></section_4>
   </div>
 </template>
 
@@ -20,12 +25,14 @@ import MainHeader from 'Components/layout/MainHeader'
 import section_1 from 'Components/main/section_1'
 import section_2 from 'Components/main/section_2'
 import section_3 from 'Components/main/section_3'
+import section_4 from 'Components/main/section_4'
 export default {
   components: {
     MainHeader,
     section_1,
     section_2,
     section_3,
+    section_4,
   },
   mixins: [],
   data() {
