@@ -76,7 +76,7 @@ export const TIMELINE = [
     lang: 'VUE, JavaScript, jQuery, SCSS',
   },
   {
-    date: '2022. 10 ~',
+    date: '2022. 10',
     cont: '(주)탑코리아서비스 홈페이지 제작',
     lang: 'VUE, JavaScript, jQuery, SCSS',
   },

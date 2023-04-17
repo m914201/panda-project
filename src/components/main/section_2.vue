@@ -6,7 +6,7 @@
           :titleTxt="targetStep.titleTxt"
           :title="targetStep.title"
         ></main-title>
-        <div class="content skill-wrap">
+        <div class="content">
           <div
             class="skill-gubun"
             v-for="(list, idx) in skills"
@@ -30,7 +30,7 @@
               </div>
               <animated-number
                 :value="cont.level"
-                :duration="500"
+                :duration="1000"
                 :formatValue="formatToPrice"
                 v-if="invasion == 'Skill'"
               />
@@ -70,13 +70,9 @@ export default {
     },
   },
   methods: {
-    langImg(icon) {
-      let URL = 'asset/image/ico/'
-      return `background-image: url(${URL + icon + '.png'});`
-    },
     barWidth(wd) {
       if (this.invasion == 'Skill')
-        return `width:${wd + `%`};transition:width ${wd / 40 + `s`};`
+        return `width:${wd + `%`};transition:width ${wd / 20 + `s`};`
       else return `width:${0 + `%`};`
     },
   },

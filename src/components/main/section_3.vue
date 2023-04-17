@@ -6,7 +6,7 @@
           :titleTxt="targetStep.titleTxt"
           :title="targetStep.title"
         ></main-title>
-        <div class="content time-wrap">
+        <div class="content">
           <div class="time-gubun">
             <div class="time-wrap">
               <div

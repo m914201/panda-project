@@ -8,8 +8,8 @@
     .main-section {
       &.section_1 {
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
         z-index: 1;
         overflow: hidden;
         .background-wrap {
@@ -32,11 +32,14 @@
         }
       }
       &.section_2 {
-        z-index: 2;
         background-color: #fff;
+        z-index: 2;
       }
       &.section_3 {
         background-color: #f2eff5;
+      }
+      &.section_4 {
+        background-color: #a7d5f2;
       }
       .item-warp {
         .inner {
@@ -44,6 +47,7 @@
             width: 100%;
             max-width: 1500px;
             height: auto;
+            position: relative !important;
             margin-top: 100px; //컨텐츠 많아지면 수정
             .skill-gubun {
               margin-bottom: 30px; //컨텐츠 많아지면 수정
@@ -104,9 +108,9 @@
                       content: '';
                     }
                     &::after {
+                      border-radius: 50%;
                       width: 10px;
                       height: 10px;
-                      border-radius: 50%;
                       position: absolute;
                       top: 50%;
                       right: 0;
@@ -141,8 +145,162 @@
                 }
               }
             }
+            .project-gubun {
+              height: 60vh !important;
+              .project-wrap {
+                // border: 1px solid red;
+                width: 100%;
+                height: 100%;
+                margin: auto;
+                .carousel-3d-container {
+                  height: 100% !important;
+                  margin: auto !important;
+                  overflow: inherit;
+                  .carousel-3d-slider {
+                    height: 100% !important;
+                    .carousel-3d-slide {
+                      border: none;
+                      height: 100% !important;
+                      background-color: transparent !important;
+                      display: flex;
+                      flex-direction: column;
+                      overflow: inherit;
+                      &.left-1 {
+                        transform: translateX(-370px) translateZ(-400px)
+                          rotateY(35deg) !important;
+                      }
+                      &.left-2 {
+                        transform: translateX(-650px) translateZ(-400px)
+                          rotateY(35deg) !important;
+                      }
+                      &.right-1 {
+                        transform: translateX(650px) translateZ(-400px)
+                          rotateY(-35deg) !important;
+                      }
+                      &.right-2 {
+                        transform: translateX(370px) translateZ(-400px)
+                          rotateY(-35deg) !important;
+                      }
+                      .cont-con {
+                        border: none;
+                        border-radius: 14px;
+                        height: 54vh;
+                        background-color: #fff;
+                        box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.2),
+                          0 7px 10px 1px rgba(0, 0, 0, 0.14),
+                          0 2px 16px 1px rgba(0, 0, 0, 0.12);
+                        overflow: hidden;
+                        .photo-con {
+                          height: 40%;
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          background-position: center;
+                        }
+                        .txt-con {
+                          // border: 2px solid #000;
+                          border-radius: 0 0 14px 14px;
+                          height: 60%;
+                          display: flex;
+                          flex-direction: column;
+                          justify-content: space-between;
+                          padding: 10px;
+                          * {
+                            color: #000;
+                          }
+                          .title {
+                            h4 {
+                              font-size: 2rem;
+                              font-weight: 600;
+                              text-align: center;
+                            }
+                            p {
+                              font-size: 1rem;
+                              font-weight: 600;
+                              text-align: center;
+                              margin-top: 10px;
+                            }
+                          }
+                          .function-cont {
+                            flex-grow: 1;
+                            padding: 20px 0;
+                            .function-wrap {
+                              display: flex;
+                              justify-content: space-between;
+                              margin-top: 10px;
+                              .function-list {
+                                display: flex;
+                                > div {
+                                  border-radius: 20px;
+                                  border: 1px solid #bebebe;
+                                  width: auto;
+                                  height: 20px;
+                                  padding: 0 10px;
+                                  color: #bebebe;
+                                  display: flex;
+                                  align-items: center;
+                                  margin-left: 5px;
+                                }
+                              }
+                            }
+                          }
+                          .skills {
+                            border-top: 1px solid #bebebe;
+                            height: 80px;
+                            padding: 10px 0 0 0;
+                            p {
+                              color: #000;
+                              font-size: 1rem;
+                            }
+                            > div {
+                              display: flex;
+                              flex-wrap: wrap;
+                              .ico-wrap {
+                                border-radius: 20px;
+                                width: auto;
+                                height: 20px;
+                                background-color: #8fadbf;
+                                padding-right: 10px;
+                                margin: 5px 10px 0 0;
+                                display: flex;
+                                align-items: center;
+                                font-size: 0.7813vw;
+                                color: #fff;
+                                .ico {
+                                  border-radius: 50%;
+                                  width: 15px;
+                                  height: 15px;
+                                  margin: 0 5px 0 10px;
+                                  text-indent: -9999px;
+                                  background-repeat: no-repeat;
+                                  background-size: cover;
+                                  background-position: center;
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      .txt-btm {
+                        border-radius: 8px;
+                        width: 100%;
+                        height: 5vh;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #fff;
+                        margin-top: 1vh;
+                        box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.2),
+                          0 7px 10px 1px rgba(0, 0, 0, 0.14),
+                          0 2px 16px 1px rgba(0, 0, 0, 0.12);
+                      }
+                    }
+                  }
+                }
+              }
+            }
             .skill-gubun,
-            .time-gubun {
+            .time-gubun,
+            .project-gubun {
               width: 100%;
               max-width: 1300px;
               height: 100%;
@@ -175,6 +333,7 @@
                     text-indent: -9999px;
                     background-repeat: no-repeat;
                     background-size: cover;
+                    background-position: center;
                   }
                   span {
                     color: #fff;
@@ -199,6 +358,10 @@
                   }
                 }
               }
+            }
+            .time-gubun,
+            .project-gubun {
+              height: 500px;
             }
           }
         }
