@@ -21,3 +21,12 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+# API KEY
+.env.development
+.env.production
+
+# firebase
+.firebase
+.firebaserc
+firebaseConfig.js

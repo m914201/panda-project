@@ -47,5 +47,13 @@ export default {
     formatToPrice(value) {
       return `${Number(value).toFixed(0)}`
     },
+    langImg(icon) {
+      let URL = 'asset/image/ico/'
+      return `background-image: url(${URL + icon + '.png'});`
+    },
+    projectImg(icon) {
+      let URL = 'asset/image/project/'
+      return `background-image: url(${URL + icon + '.png'});`
+    },
   },
 }
