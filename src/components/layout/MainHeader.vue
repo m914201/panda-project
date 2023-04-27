@@ -3,7 +3,8 @@
     <div class="rela">
       <div class="l-wrap">
         <a href="javascript:void(0)" class="btn-home">
-          <img src="" />
+          <svg-logo :class="[{ on: navState !== 'Home' }]"></svg-logo>
+          <p :class="[{ on: navState !== 'Home' }]">LJH Portfolio</p>
         </a>
       </div>
       <div class="gnb-item-wrap">
@@ -15,6 +16,7 @@
 
 <script>
 import GnbList from 'Components/layout/partials/GnbList'
+import SvgLogo from 'Components/svg/SvgLogo'
 export default {
   props: {
     navState: {
@@ -23,6 +25,7 @@ export default {
   },
   components: {
     GnbList,
+    SvgLogo,
   },
   methods: {
     scrollInto(title) {
