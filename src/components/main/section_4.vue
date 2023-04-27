@@ -1,6 +1,6 @@
 <template>
   <div class="main-section section_4">
-    <div class="item-warp">
+    <div class="item-wrap">
       <article class="inner">
         <main-title
           :titleTxt="targetStep.titleTxt"
@@ -74,116 +74,13 @@
 
 <script>
 import MainTitle from 'Components/layout/partials/MainTitle'
-import { MAIN_TITLE } from 'Configs/layout.js'
+import { MAIN_TITLE, PROJECT } from 'Configs/layout.js'
 import { Carousel3d, Slide } from 'vue-carousel-3d'
 
 export default {
   data() {
     return {
-      slides: [
-        {
-          name: '시드물',
-          cont: '그린컴퓨터 아카데미 재원 중 제작한 포트폴리오 웹페이지',
-          date: '2021. 01. 18 - 2021. 02. 11',
-          img: 'sidmool',
-          lang: [
-            { name: 'HTML5', icon: 'html' },
-            { name: 'jQuery', icon: 'jQuery' },
-            { name: 'CSS', icon: 'css' },
-          ],
-          function: [{ name: 'publishing' }, { name: 'design' }],
-          link: [
-            {
-              name: 'Hamepage',
-              url: '',
-              ico: '',
-            },
-          ],
-        },
-        {
-          name: '철도박물관',
-          cont: '그린컴퓨터 아카데미 재원 중 제작한 포트폴리오 웹페이지',
-          date: '2021. 02. 12 - 2021. 02. 26',
-          img: 'train',
-          lang: [
-            { name: 'HTML5', icon: 'html' },
-            { name: 'jQuery', icon: 'jQuery' },
-            { name: 'CSS', icon: 'css' },
-          ],
-          function: [{ name: 'publishing' }, { name: 'design' }],
-          link: [
-            {
-              name: 'Hamepage',
-              url: '',
-              ico: '',
-            },
-          ],
-        },
-        {
-          name: '세미콜론',
-          cont: '그린컴퓨터 아카데미 재원 중 제작한 포트폴리오 웹페이지',
-          date: '2021. 03. 02 - 2021. 03. 19',
-          img: 'semicolon',
-          lang: [
-            { name: 'HTML5', icon: 'html' },
-            { name: 'jQuery', icon: 'jQuery' },
-            { name: 'CSS', icon: 'css' },
-          ],
-          function: [{ name: 'publishing' }, { name: 'design' }],
-          link: [
-            {
-              name: 'Hamepage',
-              url: '',
-              ico: '',
-            },
-          ],
-        },
-        {
-          name: '탑코리아서비스',
-          cont: '(주)HOGOO153 재직 중 계열사 홈페이지 제작 의뢰를 받아 제작한 웹페이지',
-          date: '2022. 10',
-          img: 'topkoreaservice',
-          lang: [
-            { name: 'VUE', icon: 'vue' },
-            { name: 'Javascript', icon: 'javascript' },
-            { name: 'Java(JSP)', icon: 'java' },
-            { name: 'MariaDB', icon: 'mariaDb', level: '80' },
-            { name: 'CSS(SCSS)', icon: 'css' },
-          ],
-          function: [{ name: 'front' }, { name: 'back' }, { name: 'design' }],
-          link: [
-            {
-              name: 'Hamepage',
-              url: '',
-              ico: '',
-            },
-          ],
-        },
-        {
-          name: '개인 포트폴리오',
-          cont: '프론트엔드 개발자 포트폴리오 웹사이트 개발',
-          date: '2023. 03 - 2021. 04',
-          img: 'portfolio',
-          lang: [
-            { name: 'VUE', icon: 'vue' },
-            { name: 'Javascript', icon: 'javascript' },
-            { name: 'CSS(SCSS)', icon: 'css' },
-          ],
-          function: [{ name: 'front' }, { name: 'design' }],
-          link: [
-            {
-              name: 'Hamepage',
-              url: '',
-              ico: '',
-            },
-            {
-              name: 'Github',
-              url: '',
-              ico: '',
-            },
-          ],
-        },
-      ],
+      slides: Object.freeze(PROJECT),
     }
   },
   components: {

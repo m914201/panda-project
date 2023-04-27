@@ -1,6 +1,6 @@
 <template>
   <div class="main-section section_2">
-    <div class="item-warp">
+    <div class="item-wrap">
       <article class="inner">
         <main-title
           :titleTxt="targetStep.titleTxt"

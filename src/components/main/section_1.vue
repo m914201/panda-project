@@ -1,6 +1,6 @@
 <template>
   <div class="main-section section_1">
-    <div class="item-warp">
+    <div class="item-wrap">
       <div id="glassmorphism">
         <vue-typer
           class="typing-display"
