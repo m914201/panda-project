@@ -1,6 +1,6 @@
 <template>
   <div class="main-section section_3">
-    <div class="item-warp">
+    <div class="item-wrap">
       <article class="inner">
         <main-title
           :titleTxt="targetStep.titleTxt"
@@ -14,7 +14,7 @@
                 v-for="(list, ix) in timeline"
                 :key="`test_${ix}`"
               >
-                <div class="date">{{ list.date }}</div>
+                <div class="date" v-html="list.date"></div>
                 <div class="Neumorphism">
                   <div class="company">{{ list.cont }}</div>
                   <div class="Language">{{ list.lang }}</div>
