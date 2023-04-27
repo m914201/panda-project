@@ -41,14 +41,14 @@
       &.section_4 {
         background-color: #a7d5f2;
       }
-      .item-warp {
+      .item-wrap {
         .inner {
           .content {
             width: 100%;
             max-width: 1500px;
             height: auto;
             position: relative !important;
-            margin-top: 100px; //컨텐츠 많아지면 수정
+            margin-top: 60px; //컨텐츠 많아지면 수정
             .skill-gubun {
               margin-bottom: 30px; //컨텐츠 많아지면 수정
               .cont-wrap {
@@ -58,6 +58,7 @@
               }
             }
             .time-gubun {
+              height: calc(var(--vh, 1vh) * 60) !important;
               .time-wrap {
                 width: 100%;
                 height: 100%;
@@ -98,11 +99,12 @@
                   justify-content: center;
                   margin: 30px 0;
                   .date {
-                    width: 80px;
+                    width: 100px;
                     height: 100%;
                     display: flex;
                     align-items: center;
                     position: relative;
+                    text-align: left;
                     &::after,
                     &::before {
                       content: '';
@@ -146,7 +148,7 @@
               }
             }
             .project-gubun {
-              height: 60vh !important;
+              height: calc(var(--vh, 1vh) * 60) !important;
               .project-wrap {
                 // border: 1px solid red;
                 width: 100%;
@@ -157,28 +159,30 @@
                   margin: auto !important;
                   overflow: inherit;
                   .carousel-3d-slider {
+                    width: 250px !important;
                     height: 100% !important;
                     .carousel-3d-slide {
                       border: none;
                       height: 100% !important;
+                      width: 250px !important;
                       background-color: transparent !important;
                       display: flex;
                       flex-direction: column;
                       overflow: inherit;
                       &.left-1 {
-                        transform: translateX(-370px) translateZ(-400px)
+                        transform: translateX(-120px) translateZ(-400px)
                           rotateY(35deg) !important;
                       }
                       &.left-2 {
-                        transform: translateX(-650px) translateZ(-400px)
+                        transform: translateX(-200px) translateZ(-400px)
                           rotateY(35deg) !important;
                       }
                       &.right-1 {
-                        transform: translateX(650px) translateZ(-400px)
+                        transform: translateX(200px) translateZ(-400px)
                           rotateY(-35deg) !important;
                       }
                       &.right-2 {
-                        transform: translateX(370px) translateZ(-400px)
+                        transform: translateX(120px) translateZ(-400px)
                           rotateY(-35deg) !important;
                       }
                       .cont-con {
@@ -209,12 +213,12 @@
                           }
                           .title {
                             h4 {
-                              font-size: 2rem;
+                              font-size: 4.26667vw;
                               font-weight: 600;
                               text-align: center;
                             }
                             p {
-                              font-size: 1rem;
+                              font-size: 3.66667vw;
                               font-weight: 600;
                               text-align: center;
                               margin-top: 10px;
@@ -239,6 +243,7 @@
                                   display: flex;
                                   align-items: center;
                                   margin-left: 5px;
+                                  font-size: 3.66667vw;
                                 }
                               }
                             }
@@ -249,7 +254,7 @@
                             padding: 10px 0 0 0;
                             p {
                               color: #000;
-                              font-size: 1rem;
+                              font-size: 3.66667vw;
                             }
                             > div {
                               display: flex;
@@ -263,7 +268,7 @@
                                 margin: 5px 10px 0 0;
                                 display: flex;
                                 align-items: center;
-                                font-size: 0.7813vw;
+                                font-size: 3.2vw;
                                 color: #fff;
                                 .ico {
                                   border-radius: 50%;
@@ -298,6 +303,9 @@
                 }
               }
             }
+            .skill-gubun {
+              margin: 20px auto !important;
+            }
             .skill-gubun,
             .time-gubun,
             .project-gubun {
@@ -306,7 +314,7 @@
               height: 100%;
               margin: auto;
               .title-con {
-                font-size: 0.8333vw;
+                font-size: 4.26667vw;
                 color: #000;
                 font-family: 'SeoulHangangM';
                 margin-bottom: 5px;
@@ -337,7 +345,7 @@
                   }
                   span {
                     color: #fff;
-                    font-size: 0.7813vw;
+                    font-size: 3.2vw;
                   }
                 }
                 .Fullbar {
@@ -359,9 +367,112 @@
                 }
               }
             }
-            .time-gubun,
-            .project-gubun {
-              height: 500px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include desktop {
+  .wrapper {
+    .container {
+      .main-section {
+        .item-wrap {
+          .inner {
+            .content {
+              margin-top: 100px; //컨텐츠 많아지면 수정
+              .skill-gubun {
+                .title-con {
+                  font-size: 0.8333vw;
+                }
+                .cont-wrap {
+                  .categories {
+                    span {
+                      font-size: 0.7813vw;
+                    }
+                  }
+                }
+              }
+              .time-gubun {
+                height: 500px !important;
+                padding: 1.5em 5em;
+                .time-wrap {
+                  .cont-wrap {
+                    .date {
+                      width: 80px;
+                    }
+                    .company {
+                      font-size: 1.2rem;
+                    }
+                  }
+                }
+              }
+              .project-gubun {
+                .project-wrap {
+                  .carousel-3d-container {
+                    .carousel-3d-slider {
+                      width: 361px !important;
+                      .carousel-3d-slide {
+                        width: 361px !important;
+                        &.left-1 {
+                          transform: translateX(-370px) translateZ(-400px)
+                            rotateY(35deg) !important;
+                        }
+                        &.left-2 {
+                          transform: translateX(-650px) translateZ(-400px)
+                            rotateY(35deg) !important;
+                        }
+                        &.right-1 {
+                          transform: translateX(650px) translateZ(-400px)
+                            rotateY(-35deg) !important;
+                        }
+                        &.right-2 {
+                          transform: translateX(370px) translateZ(-400px)
+                            rotateY(-35deg) !important;
+                        }
+                        .cont-con {
+                          .txt-con {
+                            .title {
+                              h4 {
+                                font-size: 2rem;
+                              }
+                              p {
+                                font-size: 1rem;
+                              }
+                            }
+                            .function-cont {
+                              p {
+                                font-size: 14px;
+                              }
+                              .function-wrap {
+                                p {
+                                  font-size: 14px;
+                                }
+                                .function-list {
+                                  div {
+                                    font-size: 14px;
+                                  }
+                                }
+                              }
+                            }
+                            .skills {
+                              p {
+                                font-size: 1rem;
+                              }
+                              div {
+                                .ico-wrap {
+                                  font-size: 0.7813vw;
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
             }
           }
         }

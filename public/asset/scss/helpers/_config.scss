@@ -61,6 +61,15 @@
   }
 }
 
+@keyframes headerTrigger {
+  0% {
+    top: -300%;
+  }
+  100% {
+    top: 80px;
+  }
+}
+
 #glassmorphism {
   width: 850px;
   height: 250px;
@@ -80,6 +89,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: block;
+    width: 100%;
+    text-align: center;
     span {
       font-size: 2rem;
       font-family: 'SeoulHangangM';
@@ -173,8 +185,7 @@
   }
 }
 .time-gubun {
-  height: 500px !important;
-  padding: 1.5em 5em;
+  padding: 0 5px;
   background: #efefef;
   border: none;
   border-radius: 0.5rem;
@@ -202,7 +213,7 @@
       -2px -2px 4px rgba(255, 255, 255, 1);
   }
   .company {
-    font-size: 1.2rem;
+    font-size: 3.26667vw;
   }
   .Neumorphism {
     width: 70%;
@@ -217,4 +228,18 @@
     color: dimgray;
     margin: 0 15px;
   }
+}
+
+@include mobile {
+  #glassmorphism {
+    width: 80%;
+    .vue-typer {
+      span {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+@include desktop {
 }
