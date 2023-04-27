@@ -1,0 +1,33 @@
+<template>
+  <svg
+    version="1.1"
+    id="Ham"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    x="0px"
+    y="0px"
+    width="81px"
+    height="74.75px"
+    viewBox="0 0 50 44"
+    enable-background="new 0 0 50 44"
+    xml:space="preserve"
+  >
+    <path
+      id="Ham_Top"
+      fill="#FFFFFF"
+      d="M50,2c0,1.104-0.895,2-2,2H2C0.896,4,0,3.104,0,2l0,0c0-1.104,0.896-2,2-2h46C49.105,0,50,0.896,50,2L50,2z"
+    />
+    <path
+      id="Ham_Center"
+      fill="#FFFFFF"
+      d="M50,22c0,1.104-0.895,2-2,2H2c-1.104,0-2-0.896-2-2l0,0c0-1.104,0.896-2,2-2h46C49.105,20,50,20.896,50,22
+	L50,22z"
+    />
+    <path
+      id="Ham_Bottom"
+      fill="#FFFFFF"
+      d="M50,42c0,1.104-0.895,2-2,2H2c-1.104,0-2-0.896-2-2l0,0c0-1.104,0.896-2,2-2h46C49.105,40,50,40.896,50,42
+	L50,42z"
+    />
+  </svg>
+</template>
