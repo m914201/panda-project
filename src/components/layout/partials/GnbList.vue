@@ -30,7 +30,8 @@ export default {
   },
   watch: {
     navState() {
-      if (this.navState == 'Home') this.isActive = false
+      if (this.navState == 'Home' || this.navState == 'About Me')
+        this.isActive = false
       else this.isActive = true
     },
   },

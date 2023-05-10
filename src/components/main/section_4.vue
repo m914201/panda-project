@@ -53,13 +53,12 @@
                   </div>
                   <div class="txt-btm">
                     <a
-                      href=""
+                      :href="list.url"
                       v-for="(list, i) in slide.link"
                       :key="`list_${i}`"
+                      target="blank"
                     >
-                      {{ list.name }}
-                      {{ list.url }}
-                      {{ list.ico }}
+                      <i :class="list.ico"></i>
                     </a>
                   </div>
                 </slide>

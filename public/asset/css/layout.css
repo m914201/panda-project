@@ -261,6 +261,23 @@ header .rela .gnb-item-wrap ul li a {
   content: 'A';
 }
 
+.wrapper .container .main-section .item-wrap .inner .tit.aboutMe h1 {
+  color: #fff;
+}
+
+.wrapper .container .main-section .item-wrap .inner .tit.aboutMe h1::before {
+  content: 'A';
+  color: #bcbac3;
+}
+
+.wrapper .container .main-section .item-wrap .inner .tit.aboutMe h1::after {
+  background-color: #fff;
+}
+
+.wrapper .container .main-section .item-wrap .inner .tit.timeline h1::before, .wrapper .container .main-section .item-wrap .inner .tit.aboutMe h1::before {
+  left: -0.1993vw;
+}
+
 @media (min-width: 1024px) {
   header .rela .l-wrap {
     margin: 0;

@@ -22,8 +22,8 @@ export default {
         if (Y >= OFFSET[1] && Y < OFFSET[2]) this.navState = 'Skill'
         if (Y >= OFFSET[2] && Y < OFFSET[3]) this.navState = 'TimeLine'
         if (Y >= OFFSET[3] && Y < OFFSET[4]) this.navState = 'Project'
-        if (Y >= OFFSET[4] && Y < OFFSET[5]) this.navState = 'Additional'
-        if (Y >= OFFSET[5]) this.navState = 'Footer'
+        // if (Y >= OFFSET[4] && Y < OFFSET[5]) this.navState = 'Additional'
+        if (Y >= OFFSET[4]) this.navState = 'About Me'
 
         if (Y + OFFSET[1] >= CONTOFFSET[0] + OFFSET[1]) this.invasion = 'Skill'
       },

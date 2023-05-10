@@ -26,14 +26,14 @@
       ref="Project"
       :invasion="invasion"
     ></section_4>
-    <section_5
+    <!-- <section_5
       class="section fullpage"
       ref="Additional"
       :invasion="invasion"
-    ></section_5>
+    ></section_5> -->
     <section_6
       class="section fullpage"
-      ref="Footer"
+      ref="About Me"
       :invasion="invasion"
     ></section_6>
   </div>
@@ -46,7 +46,7 @@ import section_1 from 'Components/main/section_1'
 import section_2 from 'Components/main/section_2'
 import section_3 from 'Components/main/section_3'
 import section_4 from 'Components/main/section_4'
-import section_5 from 'Components/main/section_5'
+// import section_5 from 'Components/main/section_5'
 import section_6 from 'Components/main/section_6'
 export default {
   components: {
@@ -56,7 +56,7 @@ export default {
     section_2,
     section_3,
     section_4,
-    section_5,
+    // section_5,
     section_6,
   },
   mixins: [],

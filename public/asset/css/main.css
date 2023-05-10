@@ -347,6 +347,10 @@
   background-color: #a7d5f2;
 }
 
+.wrapper .container .main-section.section_6 {
+  background-color: #4b5a63;
+}
+
 .wrapper .container .main-section .item-wrap .inner .content {
   width: 100%;
   max-width: 1500px;
@@ -459,28 +463,33 @@
   display: none;
 }
 
-.wrapper .container .main-section .item-wrap .inner .content .project-gubun {
+.wrapper .container .main-section .item-wrap .inner .content .project-gubun,
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun {
   height: calc(var(--vh, 1vh) * 60) !important;
 }
 
-.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap {
+.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap,
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .project-wrap {
   width: 100%;
   height: 100%;
   margin: auto;
 }
 
-.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container {
+.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container,
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .project-wrap .carousel-3d-container {
   height: 100% !important;
   margin: auto !important;
   overflow: inherit;
 }
 
-.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider {
+.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider,
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .project-wrap .carousel-3d-container .carousel-3d-slider {
   width: 250px !important;
   height: 100% !important;
 }
 
-.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide {
+.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide,
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide {
   border: none;
   height: 100% !important;
   width: 250px !important;
@@ -495,27 +504,32 @@
   overflow: inherit;
 }
 
-.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide.left-1 {
+.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide.left-1,
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide.left-1 {
   -webkit-transform: translateX(-120px) translateZ(-400px) rotateY(35deg) !important;
           transform: translateX(-120px) translateZ(-400px) rotateY(35deg) !important;
 }
 
-.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide.left-2 {
+.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide.left-2,
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide.left-2 {
   -webkit-transform: translateX(-200px) translateZ(-400px) rotateY(35deg) !important;
           transform: translateX(-200px) translateZ(-400px) rotateY(35deg) !important;
 }
 
-.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide.right-1 {
+.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide.right-1,
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide.right-1 {
   -webkit-transform: translateX(200px) translateZ(-400px) rotateY(-35deg) !important;
           transform: translateX(200px) translateZ(-400px) rotateY(-35deg) !important;
 }
 
-.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide.right-2 {
+.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide.right-2,
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide.right-2 {
   -webkit-transform: translateX(120px) translateZ(-400px) rotateY(-35deg) !important;
           transform: translateX(120px) translateZ(-400px) rotateY(-35deg) !important;
 }
 
-.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con {
+.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con,
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con {
   border: none;
   border-radius: 14px;
   height: 54vh;
@@ -525,14 +539,16 @@
   overflow: hidden;
 }
 
-.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .photo-con {
+.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .photo-con,
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .photo-con {
   height: 40%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con {
+.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con,
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con {
   border-radius: 0 0 14px 14px;
   height: 60%;
   display: -webkit-box;
@@ -548,31 +564,36 @@
   padding: 10px;
 }
 
-.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con * {
+.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con *,
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con * {
   color: #000;
 }
 
-.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con .title h4 {
+.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con .title h4,
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con .title h4 {
   font-size: 4.26667vw;
   font-weight: 600;
   text-align: center;
 }
 
-.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con .title p {
+.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con .title p,
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con .title p {
   font-size: 3.66667vw;
   font-weight: 600;
   text-align: center;
   margin-top: 10px;
 }
 
-.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con .function-cont {
+.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con .function-cont,
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con .function-cont {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   padding: 20px 0;
 }
 
-.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con .function-cont .function-wrap {
+.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con .function-cont .function-wrap,
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con .function-cont .function-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -582,13 +603,15 @@
   margin-top: 10px;
 }
 
-.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con .function-cont .function-wrap .function-list {
+.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con .function-cont .function-wrap .function-list,
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con .function-cont .function-wrap .function-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con .function-cont .function-wrap .function-list > div {
+.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con .function-cont .function-wrap .function-list > div,
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con .function-cont .function-wrap .function-list > div {
   border-radius: 20px;
   border: 1px solid #bebebe;
   width: auto;
@@ -605,18 +628,21 @@
   font-size: 3.66667vw;
 }
 
-.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con .skills {
+.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con .skills,
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con .skills {
   border-top: 1px solid #bebebe;
   height: 80px;
   padding: 10px 0 0 0;
 }
 
-.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con .skills p {
+.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con .skills p,
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con .skills p {
   color: #000;
   font-size: 3.66667vw;
 }
 
-.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con .skills > div {
+.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con .skills > div,
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con .skills > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -624,7 +650,8 @@
       flex-wrap: wrap;
 }
 
-.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con .skills > div .ico-wrap {
+.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con .skills > div .ico-wrap,
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con .skills > div .ico-wrap {
   border-radius: 20px;
   width: auto;
   height: 20px;
@@ -641,7 +668,8 @@
   color: #fff;
 }
 
-.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con .skills > div .ico-wrap .ico {
+.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con .skills > div .ico-wrap .ico,
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con .skills > div .ico-wrap .ico {
   border-radius: 50%;
   width: 15px;
   height: 15px;
@@ -652,7 +680,8 @@
   background-position: center;
 }
 
-.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .txt-btm {
+.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .txt-btm,
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .txt-btm {
   border-radius: 8px;
   width: 100%;
   height: 5vh;
@@ -671,13 +700,35 @@
           box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.2), 0 7px 10px 1px rgba(0, 0, 0, 0.14), 0 2px 16px 1px rgba(0, 0, 0, 0.12);
 }
 
+.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .txt-btm a,
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .txt-btm a {
+  width: 50%;
+  text-align: center;
+}
+
+.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .txt-btm a i,
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .txt-btm a i {
+  font-size: 20px;
+  color: #000;
+}
+
+.wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .txt-btm a:hover i,
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .txt-btm a:hover i {
+  color: #8fadbf;
+  -webkit-animation: rubberBand;
+          animation: rubberBand;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+}
+
 .wrapper .container .main-section .item-wrap .inner .content .skill-gubun {
   margin: 20px auto !important;
 }
 
 .wrapper .container .main-section .item-wrap .inner .content .skill-gubun,
 .wrapper .container .main-section .item-wrap .inner .content .time-gubun,
-.wrapper .container .main-section .item-wrap .inner .content .project-gubun {
+.wrapper .container .main-section .item-wrap .inner .content .project-gubun,
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun {
   width: 100%;
   max-width: 1300px;
   height: 100%;
@@ -686,7 +737,8 @@
 
 .wrapper .container .main-section .item-wrap .inner .content .skill-gubun .title-con,
 .wrapper .container .main-section .item-wrap .inner .content .time-gubun .title-con,
-.wrapper .container .main-section .item-wrap .inner .content .project-gubun .title-con {
+.wrapper .container .main-section .item-wrap .inner .content .project-gubun .title-con,
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .title-con {
   font-size: 4.26667vw;
   color: #000;
   font-family: 'SeoulHangangM';
@@ -695,7 +747,8 @@
 
 .wrapper .container .main-section .item-wrap .inner .content .skill-gubun .cont-wrap,
 .wrapper .container .main-section .item-wrap .inner .content .time-gubun .cont-wrap,
-.wrapper .container .main-section .item-wrap .inner .content .project-gubun .cont-wrap {
+.wrapper .container .main-section .item-wrap .inner .content .project-gubun .cont-wrap,
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .cont-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -706,13 +759,15 @@
 
 .wrapper .container .main-section .item-wrap .inner .content .skill-gubun .cont-wrap *,
 .wrapper .container .main-section .item-wrap .inner .content .time-gubun .cont-wrap *,
-.wrapper .container .main-section .item-wrap .inner .content .project-gubun .cont-wrap * {
+.wrapper .container .main-section .item-wrap .inner .content .project-gubun .cont-wrap *,
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .cont-wrap * {
   font-family: 'SeoulHangangM';
 }
 
 .wrapper .container .main-section .item-wrap .inner .content .skill-gubun .cont-wrap .categories,
 .wrapper .container .main-section .item-wrap .inner .content .time-gubun .cont-wrap .categories,
-.wrapper .container .main-section .item-wrap .inner .content .project-gubun .cont-wrap .categories {
+.wrapper .container .main-section .item-wrap .inner .content .project-gubun .cont-wrap .categories,
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .cont-wrap .categories {
   border-radius: 12px;
   width: 130px;
   height: 24px;
@@ -727,7 +782,8 @@
 
 .wrapper .container .main-section .item-wrap .inner .content .skill-gubun .cont-wrap .categories .icon,
 .wrapper .container .main-section .item-wrap .inner .content .time-gubun .cont-wrap .categories .icon,
-.wrapper .container .main-section .item-wrap .inner .content .project-gubun .cont-wrap .categories .icon {
+.wrapper .container .main-section .item-wrap .inner .content .project-gubun .cont-wrap .categories .icon,
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .cont-wrap .categories .icon {
   border-radius: 50%;
   width: 18px;
   height: 18px;
@@ -740,14 +796,16 @@
 
 .wrapper .container .main-section .item-wrap .inner .content .skill-gubun .cont-wrap .categories span,
 .wrapper .container .main-section .item-wrap .inner .content .time-gubun .cont-wrap .categories span,
-.wrapper .container .main-section .item-wrap .inner .content .project-gubun .cont-wrap .categories span {
+.wrapper .container .main-section .item-wrap .inner .content .project-gubun .cont-wrap .categories span,
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .cont-wrap .categories span {
   color: #fff;
   font-size: 3.2vw;
 }
 
 .wrapper .container .main-section .item-wrap .inner .content .skill-gubun .cont-wrap .Fullbar,
 .wrapper .container .main-section .item-wrap .inner .content .time-gubun .cont-wrap .Fullbar,
-.wrapper .container .main-section .item-wrap .inner .content .project-gubun .cont-wrap .Fullbar {
+.wrapper .container .main-section .item-wrap .inner .content .project-gubun .cont-wrap .Fullbar,
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .cont-wrap .Fullbar {
   height: 4px;
   background-color: #b8ddf5;
   text-indent: -9999px;
@@ -760,7 +818,8 @@
 
 .wrapper .container .main-section .item-wrap .inner .content .skill-gubun .cont-wrap .Fullbar .filled_bar,
 .wrapper .container .main-section .item-wrap .inner .content .time-gubun .cont-wrap .Fullbar .filled_bar,
-.wrapper .container .main-section .item-wrap .inner .content .project-gubun .cont-wrap .Fullbar .filled_bar {
+.wrapper .container .main-section .item-wrap .inner .content .project-gubun .cont-wrap .Fullbar .filled_bar,
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .cont-wrap .Fullbar .filled_bar {
   width: 0;
   height: 100%;
   position: absolute;
@@ -769,6 +828,79 @@
   background-color: #8fadbf;
   -webkit-transition: 5s;
   transition: 5s;
+}
+
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun * {
+  color: #fff;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .AboutMe-Top-wrap,
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .AboutMe-Bottom-wrap {
+  width: 100%;
+  padding: 25px 0;
+}
+
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .AboutMe-Top-wrap {
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 2px solid #fff;
+}
+
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .AboutMe-Top-wrap h1 {
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .AboutMe-Top-wrap p {
+  font-size: 1.176vw;
+  line-height: 1.5;
+}
+
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .AboutMe-Bottom-wrap {
+  height: 40%;
+}
+
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .AboutMe-Bottom-wrap ul {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .AboutMe-Bottom-wrap ul li {
+  width: calc(100% / 2);
+  height: calc(100% / 3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .AboutMe-Bottom-wrap ul li div {
+  font-size: 1vw;
+}
+
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .AboutMe-Bottom-wrap ul li div.title {
+  width: 30%;
+  font-weight: bold;
+}
+
+.wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .AboutMe-Bottom-wrap ul li div.cont {
+  width: 70%;
 }
 
 @media (min-width: 1024px) {
@@ -834,10 +966,22 @@
   .wrapper .container .main-section .item-wrap .inner .content .project-gubun .project-wrap .carousel-3d-container .carousel-3d-slider .carousel-3d-slide .cont-con .txt-con .skills div .ico-wrap {
     font-size: 0.7813vw;
   }
+  .wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .AboutMe-Top-wrap,
+  .wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .AboutMe-Bottom-wrap {
+    width: 100%;
+    padding: 25px 0;
+  }
+  .wrapper .container .main-section .item-wrap .inner .content .AboutMe-gubun .AboutMe-Bottom-wrap ul li {
+    width: calc(100% / 3);
+    height: calc(100% / 2);
+  }
 }
 
-.font {
-  font-family: fontawesome !important;
-  font-weight: 900;
+.awesome {
+  font-family: 'Font Awesome 6 Free' !important;
+}
+
+.awesome.fa-brands {
+  font-family: 'Font Awesome 6 Brands' !important;
 }
 /*# sourceMappingURL=main.css.map */

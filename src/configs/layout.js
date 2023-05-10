@@ -3,8 +3,8 @@ export const GNB_LIST = [
   { title: 'Skill', on: false },
   { title: 'TimeLine', on: false },
   { title: 'Project', on: false },
-  { title: 'Additional', on: false },
-  { title: 'Footer', on: false },
+  // { title: 'Additional', on: false },
+  { title: 'About Me', on: false },
 ]
 
 export const MAIN_TITLE = {
@@ -20,13 +20,13 @@ export const MAIN_TITLE = {
     title: 'project',
     titleTxt: 'PROJECT',
   },
-  ADDITONAL: {
-    title: 'additional',
-    titleTxt: 'ADDITONAL',
-  },
-  FOOTER: {
-    title: 'footer',
-    titleTxt: 'FOOTER',
+  // ADDITONAL: {
+  //   title: 'additional',
+  //   titleTxt: 'ADDITONAL',
+  // },
+  ABOUTME: {
+    title: 'aboutMe',
+    titleTxt: 'ABOUT ME',
   },
 }
 
@@ -110,8 +110,13 @@ export const PROJECT = [
     link: [
       {
         name: 'Hamepage',
-        url: '',
-        ico: '',
+        url: 'http://panda-wdg.co.kr/sidmool.html',
+        ico: ['awesome', 'fa-solid', 'fa-house'],
+      },
+      {
+        name: 'Github',
+        url: 'https://github.com/m914201/panda-wdg',
+        ico: ['awesome', 'fa-brands', 'fa-github'],
       },
     ],
   },
@@ -129,8 +134,13 @@ export const PROJECT = [
     link: [
       {
         name: 'Hamepage',
-        url: '',
-        ico: '',
+        url: 'http://panda-wdg.co.kr/train.html',
+        ico: ['awesome', 'fa-solid', 'fa-house'],
+      },
+      {
+        name: 'Github',
+        url: 'https://github.com/m914201/panda-wdg',
+        ico: ['awesome', 'fa-brands', 'fa-github'],
       },
     ],
   },
@@ -148,8 +158,13 @@ export const PROJECT = [
     link: [
       {
         name: 'Hamepage',
-        url: '',
-        ico: '',
+        url: 'http://panda-wdg.co.kr/semicolon.html',
+        ico: ['awesome', 'fa-solid', 'fa-house'],
+      },
+      {
+        name: 'Github',
+        url: 'https://github.com/m914201/panda-wdg',
+        ico: ['awesome', 'fa-brands', 'fa-github'],
       },
     ],
   },
@@ -169,8 +184,8 @@ export const PROJECT = [
     link: [
       {
         name: 'Hamepage',
-        url: '',
-        ico: '',
+        url: 'http://www.topkoreaservice.co.kr',
+        ico: ['awesome', 'fa-solid', 'fa-house'],
       },
     ],
   },
@@ -188,14 +203,48 @@ export const PROJECT = [
     link: [
       {
         name: 'Hamepage',
-        url: '',
-        ico: '',
+        url: 'https://h.panda.pe.kr',
+        ico: ['awesome', 'fa-solid', 'fa-house'],
       },
       {
         name: 'Github',
-        url: '',
-        ico: '',
+        url: 'https://github.com/m914201/panda-project',
+        ico: ['awesome', 'fa-brands', 'fa-github'],
       },
     ],
+  },
+]
+
+export const INTRODUCT =
+  '출발은 조금 늦었지만' +
+  `<br />` +
+  '안되면 될 때까지 포기를 모르는 끈기,' +
+  `<br />` +
+  '남들보다 뛰어나다는 생각은 버리고 누구보다 많이 뛸 생각으로' +
+  `<br />` +
+  '내가 할 일이다, 한번 시작하면 끝을 보자는 책임감으로' +
+  `<br />` +
+  '항상 성실하게 앞으로 걸어나가는 프론트엔드 개발자가 되겠습니다.'
+
+export const ABOUT_ME = [
+  {
+    title: 'Name',
+    cont: '임진혁',
+  },
+  {
+    title: 'Email',
+    cont: 'm914201@naver.com',
+  },
+  {
+    title: 'Phone',
+    cont: '010.  4283.  3060',
+  },
+  {
+    title: 'Age',
+    cont: '1994.  03.  06',
+  },
+  {
+    title: 'Address',
+    cont: '서울시 강서구 가로공원로88길 7-20',
   },
 ]

@@ -3,8 +3,12 @@
     <div class="rela">
       <div class="l-wrap">
         <a href="javascript:void(0)" class="btn-home">
-          <svg-logo :class="[{ on: navState !== 'Home' }]"></svg-logo>
-          <p :class="[{ on: navState !== 'Home' }]">LJH Portfolio</p>
+          <svg-logo
+            :class="{ on: navState !== 'Home' && navState !== 'About Me' }"
+          ></svg-logo>
+          <p :class="[{ on: navState !== 'Home' && navState !== 'About Me' }]">
+            LJH Portfolio
+          </p>
         </a>
       </div>
       <div class="gnb-item-wrap">

@@ -228,6 +228,26 @@ header {
                 }
               }
             }
+            &.aboutMe {
+              h1 {
+                color: #fff;
+                &::before {
+                  content: 'A';
+                  color: #bcbac3;
+                }
+                &::after {
+                  background-color: #fff;
+                }
+              }
+            }
+            &.timeline,
+            &.aboutMe {
+              h1 {
+                &::before {
+                  left: -0.1993vw;
+                }
+              }
+            }
           }
         }
       }

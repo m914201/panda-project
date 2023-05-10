@@ -41,6 +41,9 @@
       &.section_4 {
         background-color: #a7d5f2;
       }
+      &.section_6 {
+        background-color: #4b5a63;
+      }
       .item-wrap {
         .inner {
           .content {
@@ -147,7 +150,8 @@
                 }
               }
             }
-            .project-gubun {
+            .project-gubun,
+            .AboutMe-gubun {
               height: calc(var(--vh, 1vh) * 60) !important;
               .project-wrap {
                 // border: 1px solid red;
@@ -297,6 +301,21 @@
                         box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.2),
                           0 7px 10px 1px rgba(0, 0, 0, 0.14),
                           0 2px 16px 1px rgba(0, 0, 0, 0.12);
+                        a {
+                          width: 50%;
+                          text-align: center;
+                          i {
+                            font-size: 20px;
+                            color: #000;
+                          }
+                          &:hover {
+                            i {
+                              color: $main-color;
+                              animation: rubberBand;
+                              animation-duration: 0.8s;
+                            }
+                          }
+                        }
                       }
                     }
                   }
@@ -308,7 +327,8 @@
             }
             .skill-gubun,
             .time-gubun,
-            .project-gubun {
+            .project-gubun,
+            .AboutMe-gubun {
               width: 100%;
               max-width: 1300px;
               height: 100%;
@@ -363,6 +383,56 @@
                     left: 0;
                     background-color: $main-color;
                     transition: 5s;
+                  }
+                }
+              }
+            }
+            .AboutMe-gubun {
+              * {
+                color: #fff;
+                font-family: 'Noto Sans KR', sans-serif;
+              }
+              .AboutMe-Top-wrap,
+              .AboutMe-Bottom-wrap {
+                width: 100%;
+                padding: 25px 0;
+              }
+              .AboutMe-Top-wrap {
+                height: 60%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                border-bottom: 2px solid #fff;
+                h1 {
+                  font-size: 1.5vw;
+                  font-weight: bold;
+                }
+                p {
+                  font-size: 1.176vw;
+                  line-height: 1.5;
+                }
+              }
+              .AboutMe-Bottom-wrap {
+                height: 40%;
+                ul {
+                  height: 100%;
+                  display: flex;
+                  flex-wrap: wrap;
+                  li {
+                    width: calc(100% / 2);
+                    height: calc(100% / 3);
+                    display: flex;
+                    align-items: start;
+                    div {
+                      font-size: 1vw;
+                      &.title {
+                        width: 30%;
+                        font-weight: bold;
+                      }
+                      &.cont {
+                        width: 70%;
+                      }
+                    }
                   }
                 }
               }
@@ -473,6 +543,27 @@
                   }
                 }
               }
+              .AboutMe-gubun {
+                .AboutMe-Top-wrap,
+                .AboutMe-Bottom-wrap {
+                  width: 100%;
+                  padding: 25px 0;
+                }
+                .AboutMe-Top-wrap {
+                  h1 {
+                  }
+                  p {
+                  }
+                }
+                .AboutMe-Bottom-wrap {
+                  ul {
+                    li {
+                      width: calc(100% / 3);
+                      height: calc(100% / 2);
+                    }
+                  }
+                }
+              }
             }
           }
         }
@@ -480,7 +571,9 @@
     }
   }
 }
-.font {
-  font-family: fontawesome !important;
-  font-weight: 900;
+.awesome {
+  font-family: 'Font Awesome 6 Free' !important;
+  &.fa-brands {
+    font-family: 'Font Awesome 6 Brands' !important;
+  }
 }

@@ -5,9 +5,17 @@
         <div class="l-wrap">
           <a href="javascript:void(0)" class="btn-home">
             <svg-logo
-              :class="[{ on: navState !== 'Home' }, { active: trigger }]"
+              :class="[
+                { on: navState !== 'Home' && navState !== 'About Me' },
+                { active: trigger },
+              ]"
             ></svg-logo>
-            <p :class="[{ on: navState !== 'Home' }, { active: trigger }]">
+            <p
+              :class="[
+                { on: navState !== 'Home' && navState !== 'About Me' },
+                { active: trigger },
+              ]"
+            >
               LJH Portfolio
             </p>
           </a>
@@ -19,7 +27,10 @@
         >
           <svg-ham
             class="ham"
-            :class="[{ on: navState !== 'Home' }, { active: trigger }]"
+            :class="[
+              { on: navState !== 'Home' && navState !== 'About Me' },
+              { active: trigger },
+            ]"
           ></svg-ham>
         </div>
       </div>
