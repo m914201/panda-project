@@ -14,6 +14,14 @@
                 프론트엔드 개발자를 꿈꾸는 임진혁입니다.
               </h1>
               <p v-html="introduct"></p>
+              <div class="resume-wrap">
+                <a
+                  href="https://h.panda.pe.kr/asset/image/file/Resume.pdf"
+                  target="_self"
+                  download
+                  >DOWNLOAD CV</a
+                >
+              </div>
             </div>
             <div class="AboutMe-Bottom-wrap">
               <ul>

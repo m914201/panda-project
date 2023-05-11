@@ -43,17 +43,17 @@ export const SKILLS = [
     content: [
       { name: 'Vue', icon: 'vue', level: '80' },
       { name: 'HTML5', icon: 'html', level: '90' },
-      { name: 'PHP', icon: 'php', level: '90' },
+      { name: 'PHP', icon: 'php', level: '60' },
       { name: 'CSS3(SCSS)', icon: 'css', level: '90' },
     ],
   },
   {
     title: 'Back',
-    content: [{ name: 'Java(JSP)', icon: 'java', level: '80' }],
+    content: [{ name: 'Java(JSP)', icon: 'java', level: '50' }],
   },
   {
     title: 'DB',
-    content: [{ name: 'MariaDB', icon: 'mariaDb', level: '80' }],
+    content: [{ name: 'MariaDB', icon: 'mariaDb', level: '50' }],
   },
 ]
 

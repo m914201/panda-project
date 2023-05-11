@@ -56,6 +56,11 @@ export default {
       trigger: false,
     }
   },
+  watch: {
+    navState() {
+      console.log(this.navState)
+    },
+  },
   props: {
     navState: {
       type: String,

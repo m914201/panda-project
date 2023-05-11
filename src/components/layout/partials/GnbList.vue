@@ -42,7 +42,6 @@ export default {
     },
     scrollInto(title) {
       this.$emit('scrollInto', title)
-      console.log(title)
     },
   },
 }

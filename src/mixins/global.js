@@ -33,10 +33,8 @@ export default {
       handler() {
         if (this.window.width < 1023) {
           this.windowWid = false
-          console.log('false')
         } else {
           this.windowWid = true
-          console.log('true')
         }
       },
     },

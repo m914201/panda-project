@@ -34,7 +34,6 @@ export default {
   methods: {
     scrollInto(title) {
       this.$emit('scrollInto', title)
-      console.log(title)
     },
   },
 }

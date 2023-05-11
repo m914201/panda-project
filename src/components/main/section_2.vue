@@ -30,7 +30,7 @@
               </div>
               <animated-number
                 :value="cont.level"
-                :duration="1000"
+                :duration="2000"
                 :formatValue="formatToPrice"
                 v-if="invasion == 'Skill'"
               />
@@ -76,9 +76,7 @@ export default {
       else return `width:${0 + `%`};`
     },
   },
-  async created() {
-    console.log(this.invasion)
-  },
+  async created() {},
   updated() {},
 }
 </script>
