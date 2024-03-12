@@ -79,7 +79,7 @@ export const TIMELINE = [
     lang: 'PHP, JavaScript, jQuery, CSS',
   },
   {
-    date: '2022. 01 ~',
+    date: '2022. 01 ~' + `<br />` + '2023.06',
     cont: '(주)HOGOO153',
     lang: 'VUE, JavaScript, jQuery, SCSS',
   },
@@ -92,6 +92,11 @@ export const TIMELINE = [
     date: '2022. 12 ~',
     cont: '(주)마키노차야 웹사이트 유지보수',
     lang: 'PHP, JavaScript, jQuery, CSS',
+  },
+  {
+    date: '2023. 06 ~',
+    cont: '인텔리콘연구소',
+    lang: 'NUXT, JavaScript, jQuery, tailwindcss',
   },
 ]
 
@@ -110,7 +115,7 @@ export const PROJECT = [
     link: [
       {
         name: 'Hamepage',
-        url: 'http://panda-wdg.co.kr/sidmool.html',
+        url: 'https://h.panda-wdg.com/sidmool',
         ico: ['awesome', 'fa-solid', 'fa-house'],
       },
       {
@@ -134,7 +139,7 @@ export const PROJECT = [
     link: [
       {
         name: 'Hamepage',
-        url: 'http://panda-wdg.co.kr/train.html',
+        url: 'https://h.panda-wdg.com/train',
         ico: ['awesome', 'fa-solid', 'fa-house'],
       },
       {
@@ -158,7 +163,7 @@ export const PROJECT = [
     link: [
       {
         name: 'Hamepage',
-        url: 'http://panda-wdg.co.kr/semicolon.html',
+        url: 'https://h.panda-wdg.com/semicolon',
         ico: ['awesome', 'fa-solid', 'fa-house'],
       },
       {

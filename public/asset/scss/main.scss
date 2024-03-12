@@ -1,7 +1,7 @@
 @charset "utf-8";
-@import 'helpers/variables';
-@import 'helpers/mixins';
-@import 'helpers/config';
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/config";
 
 .wrapper {
   .container {
@@ -110,7 +110,7 @@
                     text-align: left;
                     &::after,
                     &::before {
-                      content: '';
+                      content: "";
                     }
                     &::after {
                       border-radius: 50%;
@@ -336,12 +336,12 @@
               .title-con {
                 font-size: 4.26667vw;
                 color: #000;
-                font-family: 'SeoulHangangM';
+                font-family: "SeoulHangangM";
                 margin-bottom: 5px;
               }
               .cont-wrap {
                 * {
-                  font-family: 'SeoulHangangM';
+                  font-family: "SeoulHangangM";
                 }
 
                 display: flex;
@@ -390,7 +390,7 @@
             .AboutMe-gubun {
               * {
                 color: #fff;
-                font-family: 'Noto Sans KR', sans-serif;
+                font-family: "Noto Sans KR", sans-serif;
               }
               .AboutMe-Top-wrap,
               .AboutMe-Bottom-wrap {
@@ -426,7 +426,7 @@
                   cursor: pointer;
                   a {
                     margin: auto;
-                    font-family: 'Noto Sans KR', sans-serif;
+                    font-family: "Noto Sans KR", sans-serif;
                     font-weight: bold;
                     font-size: 3.66667vw;
                     letter-spacing: 0.5px;
@@ -632,8 +632,8 @@
   }
 }
 .awesome {
-  font-family: 'Font Awesome 6 Free' !important;
+  font-family: "Font Awesome 6 Free" !important;
   &.fa-brands {
-    font-family: 'Font Awesome 6 Brands' !important;
+    font-family: "Font Awesome 6 Brands" !important;
   }
 }

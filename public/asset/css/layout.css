@@ -4,179 +4,120 @@ header {
   position: fixed;
   z-index: 9999;
 }
-
 header .rela {
   max-width: 1500px;
   height: 100%;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 header .rela .l-wrap {
   width: auto;
   margin: auto;
 }
-
 header .rela .l-wrap .btn-home {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 header .rela .l-wrap .btn-home svg {
   width: 80px;
 }
-
 header .rela .l-wrap .btn-home svg path {
   fill: #fff;
 }
-
 header .rela .l-wrap .btn-home svg.on path, header .rela .l-wrap .btn-home svg.active path {
   fill: #000;
 }
-
 header .rela .l-wrap .btn-home p {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-left: 15px;
   font-size: 25px;
   color: #fff;
-  font-family: 'SeoulHangangM';
+  font-family: "SeoulHangangM";
 }
-
 header .rela .l-wrap .btn-home p.on, header .rela .l-wrap .btn-home p.active {
   color: #000;
 }
-
 header .rela .ham-wrapp,
 header .rela .ham-wrapp path {
   display: inline-block;
-  -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 header .rela .ham-wrapp {
   width: 80px;
   height: 100%;
   position: relative;
   cursor: pointer;
 }
-
 header .rela .ham-wrapp svg {
   width: 25px;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-
 header .rela .ham-wrapp svg path {
   fill: #fff;
 }
-
 header .rela .ham-wrapp svg.on path, header .rela .ham-wrapp svg.active path {
   fill: #000;
 }
-
 header .rela .ham-wrapp.active {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  transform: rotate(360deg);
 }
-
 header .rela .ham-wrapp.active #Ham_Top {
-  -webkit-transform: translate(7px, 38px) rotate(-45deg);
-          transform: translate(7px, 38px) rotate(-45deg);
+  transform: translate(7px, 38px) rotate(-45deg);
 }
-
 header .rela .ham-wrapp.active #Ham_Center {
-  -webkit-transform: translate(24px, -11px) rotate(45deg);
-          transform: translate(24px, -11px) rotate(45deg);
+  transform: translate(24px, -11px) rotate(45deg);
 }
-
 header .rela .ham-wrapp.active #Ham_Bottom {
   opacity: 0;
 }
-
 header .rela .gnb-item-wrap ul {
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 header .rela .gnb-item-wrap ul li {
   width: 150px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   cursor: pointer;
 }
-
 header .rela .gnb-item-wrap ul li.on {
   height: 40px;
   background-color: #fff;
   border-radius: 20px;
-  -webkit-box-shadow: 2px 20px 30px -10px #8fadbf;
-          box-shadow: 2px 20px 30px -10px #8fadbf;
+  box-shadow: 2px 20px 30px -10px #8fadbf;
 }
-
 header .rela .gnb-item-wrap ul li.on a {
   color: #8fadbf;
 }
-
 header .rela .gnb-item-wrap ul li.on.active {
   background-color: #8fadbf;
 }
-
 header .rela .gnb-item-wrap ul li.on.active a {
   color: #fff;
 }
-
 header .rela .gnb-item-wrap ul li.active a {
   color: #000;
 }
-
 header .rela .gnb-item-wrap ul li a {
   margin: auto;
   color: #fff;
   font-size: 1.275rem;
-  font-family: 'SeoulHangangM';
+  font-family: "SeoulHangangM";
 }
 
 .wrapper {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex-direction: column;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
   width: 100%;
   height: auto;
   position: absolute;
@@ -185,29 +126,23 @@ header .rela .gnb-item-wrap ul li a {
   overflow: hidden;
   word-break: keep-all;
 }
-
 .wrapper .container {
   position: relative;
   width: 100%;
   height: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
-
 .wrapper .container .main-section {
   width: 100%;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   position: relative;
 }
-
 .wrapper .container .main-section .item-wrap {
   width: 100%;
   height: 100%;
   position: relative;
 }
-
 .wrapper .container .main-section .item-wrap .inner {
   width: 100%;
   max-width: 1500px;
@@ -215,16 +150,14 @@ header .rela .gnb-item-wrap ul li a {
   margin: auto;
   padding: 80px 15px;
 }
-
 .wrapper .container .main-section .item-wrap .inner .tit h1 {
   color: #000;
   font-size: 6vw;
-  font-family: 'Sen', sans-serif;
+  font-family: "Sen", sans-serif;
   position: relative;
   display: inline-block;
   z-index: 1;
 }
-
 .wrapper .container .main-section .item-wrap .inner .tit h1::before {
   color: #cacaca;
   position: absolute;
@@ -234,46 +167,37 @@ header .rela .gnb-item-wrap ul li a {
   line-height: 0.82;
   z-index: -1;
 }
-
 .wrapper .container .main-section .item-wrap .inner .tit h1::after {
-  content: '';
+  content: "";
   background-color: #000;
   width: 20.4167vw;
   height: 4px;
   position: absolute;
-  right: calc(-10.4167vw / 2);
+  right: -5.20835vw;
   bottom: 0;
 }
-
 .wrapper .container .main-section .item-wrap .inner .tit.skill h1::before {
-  content: 'M';
+  content: "M";
 }
-
 .wrapper .container .main-section .item-wrap .inner .tit.timeline h1::before {
-  content: 'T';
+  content: "T";
 }
-
 .wrapper .container .main-section .item-wrap .inner .tit.project h1::before {
-  content: 'P';
+  content: "P";
 }
-
 .wrapper .container .main-section .item-wrap .inner .tit.additional h1::before {
-  content: 'A';
+  content: "A";
 }
-
 .wrapper .container .main-section .item-wrap .inner .tit.aboutMe h1 {
   color: #fff;
 }
-
 .wrapper .container .main-section .item-wrap .inner .tit.aboutMe h1::before {
-  content: 'A';
+  content: "A";
   color: #bcbac3;
 }
-
 .wrapper .container .main-section .item-wrap .inner .tit.aboutMe h1::after {
   background-color: #fff;
 }
-
 .wrapper .container .main-section .item-wrap .inner .tit.timeline h1::before, .wrapper .container .main-section .item-wrap .inner .tit.aboutMe h1::before {
   left: -0.1993vw;
 }
@@ -295,25 +219,18 @@ header .rela .gnb-item-wrap ul li a {
     width: 10.4167vw;
   }
 }
-
 @media (max-width: 1023px) {
   header .rela {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     position: relative;
   }
   header .rela #header-top {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     z-index: 9999;
   }
   header .rela #header-top.active {
     background-color: #fff;
-    -webkit-transition: 0.4s;
     transition: 0.4s;
   }
   header .rela .gnb-item-wrap {
@@ -323,18 +240,12 @@ header .rela .gnb-item-wrap ul li a {
     top: -300%;
   }
   header .rela .gnb-item-wrap.trigger {
-    -webkit-animation: headerTrigger 0.5s;
-            animation: headerTrigger 0.5s;
-    -webkit-animation-delay: 0.2s;
-            animation-delay: 0.2s;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+    animation: headerTrigger 0.5s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
   }
   header .rela .gnb-item-wrap ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   header .rela .gnb-item-wrap ul li {
     width: 100%;
@@ -342,8 +253,7 @@ header .rela .gnb-item-wrap ul li a {
   }
   header .rela .gnb-item-wrap ul li.on {
     background-color: transparent;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
   }
   header .rela .gnb-item-wrap ul li.on.active {
     background-color: transparent;
@@ -352,5 +262,4 @@ header .rela .gnb-item-wrap ul li a {
     color: #fff;
     text-shadow: #8fadbf 1px 0 20px;
   }
-}
-/*# sourceMappingURL=layout.css.map */
+}/*# sourceMappingURL=layout.css.map */
